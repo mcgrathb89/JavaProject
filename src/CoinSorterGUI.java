@@ -23,21 +23,11 @@ public class CoinSorterGUI extends Application{
                 "-fx-background-color: black;" + 
                 "-fx-text-fill: white");
 		
-		/*
-		 * The code below (which I have commented out) allows me to implement the console output for the coin calculator method (found within the CoinSorter.java class) 
-		 * by clicking the coin calculator button in the GUI menu. 
-		 * 
-		 * When I ran this event it worked as intended, but also caused the program to crash (assumably due to memory issues). I have left it here to demonstrate 
-		 * how it would work in principle but will not implement it as the brief doesn't specify that the GUI itself needs to work. However, if I am incorrect on this 
-		 * assumption then the code below will at least show that I would have been able to do it had my memory been better on my laptop.
-		 */
-		
-		/*
+
 		coinCalculatorButton.setOnAction((ActionEvent event) -> {
 			CoinSorter mainProgram = new CoinSorter();
 			mainProgram.coinCalculator(mainProgram.changeEntry, mainProgram.type);
-        });
-        */
+		});
 		
 		coinCalculatorButton.addEventHandler(MouseEvent.MOUSE_ENTERED,
 	            new EventHandler<MouseEvent>() {
